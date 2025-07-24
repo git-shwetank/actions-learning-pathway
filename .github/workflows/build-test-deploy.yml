@@ -22,8 +22,9 @@ jobs:
       - name: download, install and set up NodeJS
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
-      - run: node --version
+          node-version: 'v22.17.1'
+      - run: node -v
+      - run: npm -v
       - run: npm install
       - run: npm test
       
